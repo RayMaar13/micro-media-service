@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
             status: "success",
             data: {
                 id: media.id,
-                image: `${req.get("host")}/images/${filename}`
+                image: `http://${req.get("host")}/images/${filename}`
             }
         })
     })
